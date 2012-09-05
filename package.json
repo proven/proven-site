@@ -1,0 +1,37 @@
+{
+  "name": "proven-site",
+  "version": "0.0.0",
+  "description": "Website for Proven.",
+  "homepage": "https://github.com/proven/proven-site",
+  "author": "Proven Security Solutions Inc. (https://www.provensecuritysolutions.com)",
+  "maintainers": [
+    "Adam Pritchard <adam.pritchard@provensecuritysolutions.com>"
+  ],
+  "repository" : {
+    "type" : "git",
+    "url" : "http://github.com/proven/proven-site.git"
+  },
+  "engines" : {
+    "node": "0.8.x",
+    "npm": "1.1.x"
+  },
+  "dependencies": {
+    "docpad": "6.x",
+    "docpad-plugin-cleanurls": "2.x",
+    "docpad-plugin-coffeescript": "2.x",
+    "docpad-plugin-coffeekup": "2.x",
+    "docpad-plugin-eco": "2.x",
+    "docpad-plugin-haml": "2.x",
+    "docpad-plugin-html2coffee": "2.x",
+    "docpad-plugin-jade": "2.x",
+    "docpad-plugin-js2coffee": "2.x",
+    "docpad-plugin-less": "2.x",
+    "docpad-plugin-markdown": "2.x",
+    "docpad-plugin-partials": "2.x",
+    "docpad-plugin-stylus": "2.x"
+  },
+  "devDependencies": {
+    "docpad-plugin-livereload": "2.x"
+  },
+  "main": "node_modules/docpad/bin/docpad-server"
+}
