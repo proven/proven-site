@@ -32,6 +32,7 @@
   <div class="navbar navbar-fixed-top">
     <div class="navbar-inner">
       <div class="container">
+        <img class="brand-logo" src="img/ciphershare-arrows.svg" />
         <a class="brand" href="/"><%= @getPreparedBrand() %></a>
         <ul class="nav">
           <% for document in @getCollection('documents').toJSON(): %>
