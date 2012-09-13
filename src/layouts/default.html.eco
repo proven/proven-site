@@ -59,6 +59,6 @@
   </div><!-- /container -->
 
   <!-- Scripts -->
-  <%- @getBlock('scripts').add(["/vendor/jquery.min.js","/vendor/bootstrap.js","/scripts/script.js"]).toHTML() %>
+  <%- @getBlock('scripts').add(["/vendor/jquery.min.js","/vendor/bootstrap.js","/scripts/script.js","/vendor/jquery.masonry.min.js"]).toHTML() %>
 </body>
 </html>
