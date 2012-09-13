@@ -18,6 +18,9 @@
   <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
   <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
 
+  <!-- Including jquery here instead of below so that $() can be used in pages -->
+  <script src="/vendor/jquery.min.js"></script>
+
   <!-- Shims: IE6-8 support of HTML5 elements -->
   <!--[if lt IE 9]>
     <script async src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
@@ -59,6 +62,6 @@
   </div><!-- /container -->
 
   <!-- Scripts -->
-  <%- @getBlock('scripts').add(["/vendor/jquery.min.js","/vendor/bootstrap.js","/scripts/script.js","/vendor/jquery.masonry.min.js"]).toHTML() %>
+  <%- @getBlock('scripts').add(["/vendor/bootstrap.js","/scripts/script.js","/vendor/jquery.masonry.min.js"]).toHTML() %>
 </body>
 </html>

@@ -189,21 +189,25 @@ h1 Features and Benefits
           dt Auto-upgrade detection
           dd Ciphershare's auto upgrade detection enables rapid distribution of new client upgrades without the need for intervention by MIS staff.
 
-script
-  document.addEventListener('DOMContentLoaded', function() {
-    console.log('loaded');
-    $('.inner-container').masonry({
-      itemSelector: '.inner-container .masonry-item',
-      columnWidth: function( containerWidth ) {
-        console.log(containerWidth);
-        return containerWidth / 3;
-      }
-    });
-  });
+:coffeescript
+  $ ->
+    console.log('loaded')
+    $('.inner-container').masonry
+      itemSelector: '.inner-container .masonry-item'
+      isFitWidth: true
+      isAnimated: true
+      # columnWidth: (containerWidth) -> return containerWidth / 3
 
-style
-  .inner-container .masonry-item {
-    margin: 10px;
-    float: left;
-  }
+:stylus
+  .inner-container .masonry-item
+    margin: 10px
+    float: left
+    width: 200px
+    margin: 5px 0.9% 5px 1%
+    padding: 5px 1%
+
+  .inner-container
+    padding: 5px 0
+    clear: both
+    margin: auto
 
