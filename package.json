@@ -8,10 +8,10 @@
     "Adam Pritchard <adam.pritchard@provensecuritysolutions.com>"
   ],
   "repository" : {
-    "type" : "git",
-    "url" : "http://github.com/proven/proven-site.git"
+    "type": "git",
+    "url": "http://github.com/proven/proven-site.git"
   },
-  "engines" : {
+  "engines": {
     "node": "0.8.x",
     "npm": "1.1.x"
   },
