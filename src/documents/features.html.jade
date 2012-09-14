@@ -14,36 +14,42 @@ h1 Features and Benefits
 
     .inner-container
       .masonry-item
+        i.icon-plus.item-expand
         .item-title
           | End-to-end, always-on encryption and security
         .item-description
           | Ciphershare provides transparent encryption of all data at rest and in transit. Files, messages and chat sessions are encrypted centrally, locally and during transmission.
 
       .masonry-item
+        i.icon-plus.item-expand
         .item-title
           | Object-level permissioning
         .item-description
           | Ciphershare provides highly granular sharing of files, messages and chat sessions. Users see only the information that has been explicitly shared with them. Without access privileges, users have no access to, or even knowledge of, sensitive information.
 
       .masonry-item
+        i.icon-plus.item-expand
         .item-title
           | Strong authentication
         .item-description
           | Ciphershare utilizes a variety of strong authentication techniques to ensure users are who they claim to be.
 
       .masonry-item
+        i.icon-plus.item-expand
         .item-title
           | Digital signatures ensure authenticity and non-repudiation
         .item-description
           | Ciphershare applies digital signatures to key data objects, including documents, files, messages, chat sessions and share lists. Digital signatures ensure that data objects are authentic, and that actions performed by users are non-repudiable.
 
       .masonry-item
+        i.icon-plus.item-expand
         .item-title
           | Transitive trust model
         .item-description
           | Ciphershare uses a transitive model to develop trusted relationships and enable rapid and secure authentication. A single Security Officer can verify the authenticity of each member of a workgroup, and forward authentication status to all other members.
 
       .masonry-item
+        i.icon-plus.item-expand
         .item-title
           | No 'Super User'
         .item-description
@@ -198,6 +204,20 @@ h1 Features and Benefits
       isAnimated: true
       # columnWidth: (containerWidth) -> return containerWidth / 3
 
+    $('.item-expand').click ->
+      $desc = $(this).parent().find('.item-description')
+
+      if $desc.css('display') == 'none'
+        $desc.css('display', 'block')
+        $(this).removeClass('icon-plus')
+        $(this).addClass('icon-minus')
+      else
+        $desc.css('display', 'none')
+        $(this).removeClass('icon-minus')
+        $(this).addClass('icon-plus')
+
+      $('.inner-container').masonry('reload')
+
 :stylus
   .inner-container .masonry-item
     margin: 10px
@@ -205,9 +225,29 @@ h1 Features and Benefits
     width: 200px
     margin: 5px 0.9% 5px 1%
     padding: 5px 1%
+    border: thin grey solid
+    background-color: #DDD
+    -webkit-border-radius: border_radius=2px
+    -moz-border-radius: border_radius
+    border-radius: border_radius
 
   .inner-container
     padding: 5px 0
     clear: both
     margin: auto
+
+  .item-title
+    font-weight: bold
+    font-size: 1.3em
+
+  .item-description
+    display: none
+    margin-top: 0.5em
+
+  .item-expand
+    cursor: hand
+    cursor: pointer
+    float: right
+    margin: 0 0 0.2em 0.2em
+
 
