@@ -10,7 +10,10 @@ h1 Features and Benefits
 #outer-container
 
   .well.masonry-item
-    h3 Security
+    h3
+      | Security
+      i.icon-plus.expand-all
+
 
     .inner-container
       .masonry-item
@@ -204,10 +207,11 @@ h1 Features and Benefits
       isAnimated: true
       # columnWidth: (containerWidth) -> return containerWidth / 3
 
+    # Expand or collapse the clicked item
     $('.item-expand').click ->
       $desc = $(this).parent().find('.item-description')
 
-      if $desc.css('display') == 'none'
+      if $(this).hasClass('icon-plus')
         $desc.css('display', 'block')
         $(this).removeClass('icon-plus')
         $(this).addClass('icon-minus')
@@ -217,6 +221,18 @@ h1 Features and Benefits
         $(this).addClass('icon-plus')
 
       $('.inner-container').masonry('reload')
+
+    # The expand button for the whole section has been clicked. Expand or collapse
+    # all child items.
+    toggleExpand = true
+    $('.expand-all').click ->
+      # Adding the 'icon-plus' is a bit of a cheap hack to get the click handler to do what we want.
+      if toggleExpand
+        $('.item-expand').addClass('icon-plus').click()
+      else
+        $('.item-expand').removeClass('icon-plus').click()
+      toggleExpand = !toggleExpand
+
 
 :stylus
   .inner-container .masonry-item
@@ -250,4 +266,9 @@ h1 Features and Benefits
     float: right
     margin: 0 0 0.2em 0.2em
 
+  .expand-all
+    cursor: hand
+    cursor: pointer
+    margin-left: 0.3em
+    margin-top: 0.3em
 
