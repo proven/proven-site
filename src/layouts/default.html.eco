@@ -26,6 +26,12 @@
   <!-- Styles -->
   <!-- Note that our style.css must come after bootstrap and before bootstrap-responsive, or else the navbar gets messed up -->
   <%- @getBlock('styles').add(["/vendor/bootstrap.css","/styles/style.css","/vendor/bootstrap-responsive.css"]).toHTML() %>
+
+  <!-- Scripts -->
+  <!-- These *should* be below the body, but I want to use jQuery in inline scripts. -->
+  <script src="/vendor/jquery.min.js"></script>
+  <%- @getBlock('scripts').add(["/vendor/bootstrap.js","/scripts/script.js"]).toHTML() %>
+
 </head>
 <body>
   <!-- Markup -->
@@ -58,7 +64,5 @@
 
   </div><!-- /container -->
 
-  <!-- Scripts -->
-  <%- @getBlock('scripts').add(["/vendor/jquery.min.js","/vendor/bootstrap.js","/scripts/script.js"]).toHTML() %>
 </body>
 </html>

@@ -21,7 +21,7 @@ nav: true
 .page-header Features and Benefits
 
 .row
-  .span7
+  .span7.section-content
     .section-header Section Header
 
     .section-intro One paragraph section into that should end with a "Learn More" link.
@@ -37,12 +37,12 @@ nav: true
         .section-point-title Bold Point Title.
         .section-point-content Point content. Sentence or two. Maybe a link to specific page.
 
-  .span5
+  .span5.section-image
     img(src="/img/screenshot-placeholder.png")
 
 
 .row
-  .span7
+  .span7.section-content
     .section-header Security
 
     .section-intro Something something.
@@ -74,12 +74,12 @@ nav: true
         .section-point-title No 'Super User'
         .section-point-content xxx
 
-  .span5
+  .span5.section-image
     img(src="/img/screenshot-placeholder.png")
 
 
 .row
-  .span7
+  .span7.section-content
     .section-header Document Management
 
     .section-intro Something something.
@@ -107,12 +107,12 @@ nav: true
         .section-point-title Customizable content structure
         .section-point-content xxx
 
-  .span5
+  .span5.section-image
     img(src="/img/screenshot-placeholder.png")
 
 
 .row
-  .span7
+  .span7.section-content
     .section-header Chat
 
     .section-intro Something something.
@@ -124,12 +124,12 @@ nav: true
         .section-point-title Selective group
         .section-point-content xxx
 
-  .span5
+  .span5.section-image
     img(src="/img/screenshot-placeholder.png")
 
 
 .row
-  .span7
+  .span7.section-content
     .section-header Messaging
 
     .section-intro Something something.
@@ -145,12 +145,12 @@ nav: true
         .section-point-title Spell-checking
         .section-point-content xxx
 
-  .span5
+  .span5.section-image
     img(src="/img/screenshot-placeholder.png")
 
 
 .row
-  .span7
+  .span7.section-content
     .section-header Bandwidth Optimization
 
     .section-intro Something something.
@@ -170,12 +170,12 @@ nav: true
         .section-point-title File compression
         .section-point-content xxx
 
-  .span5
+  .span5.section-image
     img(src="/img/screenshot-placeholder.png")
 
 
 .row
-  .span7
+  .span7.section-content
     .section-header Client Mobility
 
     .section-intro Something something.
@@ -191,12 +191,12 @@ nav: true
         .section-point-title Data theft prevention and loss recovery
         .section-point-content xxx
 
-  .span5
+  .span5.section-image
     img(src="/img/screenshot-placeholder.png")
 
 
 .row
-  .span7
+  .span7.section-content
     .section-header Usability
 
     .section-intro Something something.
@@ -212,12 +212,12 @@ nav: true
         .section-point-title Well-structured interface for minimal learning curve
         .section-point-content xxx
 
-  .span5
+  .span5.section-image
     img(src="/img/screenshot-placeholder.png")
 
 
 .row
-  .span7
+  .span7.section-content
     .section-header Client-Server Architecture
 
     .section-intro Something something.
@@ -233,12 +233,12 @@ nav: true
         .section-point-title Network connection to remote server
         .section-point-content xxx
 
-  .span5
+  .span5.section-image
     img(src="/img/screenshot-placeholder.png")
 
 
 .row
-  .span7
+  .span7.section-content
     .section-header Installation and Configuration
 
     .section-intro Something something.
@@ -258,7 +258,7 @@ nav: true
         .section-point-title Auto-upgrade detection
         .section-point-content xxx
 
-  .span5
+  .span5.section-image
     img(src="/img/screenshot-placeholder.png")
 
 
@@ -287,3 +287,20 @@ nav: true
 
   .section-point-content
     display: inline
+
+
+:coffeescript(defer='defer')
+  $ ->
+
+    # Alternate content layout left-right
+    $('.section-content').each (idx, item) ->
+      if (idx % 2) == 0
+        $(item).addClass 'pull-left'
+      else
+        $(item).addClass 'pull-right'
+
+    $('.section-image').each (idx, item) ->
+      if (idx % 2) == 0
+        $(item).addClass 'pull-left'
+      else
+        $(item).addClass 'pull-right'
