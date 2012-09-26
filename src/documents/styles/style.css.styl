@@ -1,10 +1,9 @@
-navbar_height = 40px
+navbar_height = 60px
 
 a, a:link
 	cursor pointer
 
 body
-	padding-top 60px
 
 table
 	tfoot, tbody
@@ -14,6 +13,18 @@ table
 dt
   padding-top: 1em;
 
+.navbar .brand
+  font-size: 50px
+  margin-top: 10px
+
+.navbar li a
+  height: navbar_height - 20px
+  font-size: 20px
+
 .brand-logo
   height: navbar_height - 10px
   margin: ((navbar_height - @height)/2) 5px ((navbar_height - @height)/2) 0
+
+.page-header
+  font-size: 3em
+  font-weight: bold

@@ -29,10 +29,10 @@
 </head>
 <body>
   <!-- Markup -->
-  <div class="navbar navbar-fixed-top">
+  <div class="navbar">
     <div class="navbar-inner">
       <div class="container">
-        <img class="brand-logo pull-left" src="img/ciphershare-arrows.svg" />
+        <img class="brand-logo pull-left" src="/img/ciphershare-arrows.svg" />
         <a class="brand" href="/"><%= @getPreparedBrand() %></a>
         <ul class="nav">
           <% for document in @getCollection('documents').toJSON(): %>
