@@ -14,271 +14,157 @@ nav: true
   * Get rid of the dumber stuff.
   * Size the screenshots better.
   * Use cutesy images for `section-point` bullets?
-  * Alternate text and screenshots left-right?
-  * End `section-point-title` text with a period.
 
 
-.page-header Features and Benefits
-
-.row
-  .span7.section-content
-    .section-header Section Header
-
-    .section-intro One paragraph section into that should end with a "Learn More" link.
-      a.more-info(href='#') Learn More
-
-    .section-points
-
-      .section-point
-        .section-point-title Bold Point Title.
-        .section-point-content Point content. Sentence or two. Maybe a link to specific page.
-
-      .section-point
-        .section-point-title Bold Point Title.
-        .section-point-content Point content. Sentence or two. Maybe a link to specific page.
-
-  .span5.section-image
-    img(src="/img/screenshot-placeholder.png")
-
-
-.row
-  .span7.section-content
-    .section-header Security
-
-    .section-intro Something something.
-      a.more-info(href='features/security') Learn More
-
-    .section-points
-
-      .section-point
-        .section-point-title End-to-end, always-on encryption and security
-        .section-point-content xxx
-
-      .section-point
-        .section-point-title Object-level permissioning
-        .section-point-content xxx
-
-      .section-point
-        .section-point-title Strong authentication
-        .section-point-content xxx
-
-      .section-point
-        .section-point-title Digital signatures ensure authenticity and non-repudiation
-        .section-point-content xxx
-
-      .section-point
-        .section-point-title Transitive trust model
-        .section-point-content xxx
-
-      .section-point
-        .section-point-title No 'Super User'
-        .section-point-content xxx
-
-  .span5.section-image
-    img(src="/img/screenshot-placeholder.png")
-
-
-.row
-  .span7.section-content
-    .section-header Document Management
-
-    .section-intro Something something.
-      a.more-info(href='features/document-management') Learn More
-
-    .section-points
-
-      .section-point
-        .section-point-title Delta versioning
-        .section-point-content xxx
-
-      .section-point
-        .section-point-title Check-in/check-out editorial control
-        .section-point-content xxx
-
-      .section-point
-        .section-point-title Auto-notification
-        .section-point-content xxx
-
-      .section-point
-        .section-point-title Document content and metadata search
-        .section-point-content xxx
-
-      .section-point
-        .section-point-title Customizable content structure
-        .section-point-content xxx
-
-  .span5.section-image
-    img(src="/img/screenshot-placeholder.png")
-
-
-.row
-  .span7.section-content
-    .section-header Chat
-
-    .section-intro Something something.
-      a.more-info(href='features/chat') Learn More
-
-    .section-points
-
-      .section-point
-        .section-point-title Selective group
-        .section-point-content xxx
-
-  .span5.section-image
-    img(src="/img/screenshot-placeholder.png")
-
-
-.row
-  .span7.section-content
-    .section-header Messaging
-
-    .section-intro Something something.
-      a.more-info(href='features/messaging') Learn More
-
-    .section-points
-
-      .section-point
-        .section-point-title Encrypted and digitally-signed messages
-        .section-point-content xxx
-
-      .section-point
-        .section-point-title Spell-checking
-        .section-point-content xxx
-
-  .span5.section-image
-    img(src="/img/screenshot-placeholder.png")
-
-
-.row
-  .span7.section-content
-    .section-header Bandwidth Optimization
-
-    .section-intro Something something.
-      a.more-info(href='features/bandwidth-optimization') Learn More
-
-    .section-points
-
-      .section-point
-        .section-point-title Streaming encryption for efficient file transfers
-        .section-point-content xxx
-
-      .section-point
-        .section-point-title Delta versioning
-        .section-point-content xxx
-
-      .section-point
-        .section-point-title File compression
-        .section-point-content xxx
-
-  .span5.section-image
-    img(src="/img/screenshot-placeholder.png")
-
-
-.row
-  .span7.section-content
-    .section-header Client Mobility
-
-    .section-intro Something something.
-      a.more-info(href='features/client-mobility') Learn More
-
-    .section-points
-
-      .section-point
-        .section-point-title Roaming secure workspace
-        .section-point-content xxx
-
-      .section-point
-        .section-point-title Data theft prevention and loss recovery
-        .section-point-content xxx
-
-  .span5.section-image
-    img(src="/img/screenshot-placeholder.png")
-
-
-.row
-  .span7.section-content
-    .section-header Usability
-
-    .section-intro Something something.
-      a.more-info(href='features/usability') Learn More
-
-    .section-points
-
-      .section-point
-        .section-point-title Intuitive collaboration features
-        .section-point-content xxx
-
-      .section-point
-        .section-point-title Well-structured interface for minimal learning curve
-        .section-point-content xxx
-
-  .span5.section-image
-    img(src="/img/screenshot-placeholder.png")
-
-
-.row
-  .span7.section-content
-    .section-header Client-Server Architecture
-
-    .section-intro Something something.
-      a.more-info(href='features/client-server-architecture') Learn More
-
-    .section-points
-
-      .section-point
-        .section-point-title Secure local repository for offline access
-        .section-point-content xxx
-
-      .section-point
-        .section-point-title Network connection to remote server
-        .section-point-content xxx
-
-  .span5.section-image
-    img(src="/img/screenshot-placeholder.png")
-
-
-.row
-  .span7.section-content
-    .section-header Installation and Configuration
-
-    .section-intro Something something.
-      a.more-info(href='features/installation-configuration') Learn More
-
-    .section-points
-
-      .section-point
-        .section-point-title Broad platform support
-        .section-point-content xxx
-
-      .section-point
-        .section-point-title Simple installation with small footprint
-        .section-point-content xxx
-
-      .section-point
-        .section-point-title Auto-upgrade detection
-        .section-point-content xxx
-
-  .span5.section-image
-    img(src="/img/screenshot-placeholder.png")
+h1 Features and Benefits
+
+mixin section(info)
+  .row.section
+    .span7.section-content
+      h3.section-header #{info.header}
+
+      .section-intro #{info.intro}
+        a.more-info(href=info.more_info) Learn More
+
+      .section-points
+
+        each point in info.points
+          .section-point
+            .section-point-title #{point.title}
+            .section-point-content #{point.content}
+
+    .span5.section-image
+      a(href=info.image)
+        img(src=info.image)
+
+
+- var info = {}
+- info.header = 'Section Header'
+- info.intro = 'One paragraph section into that should end with a "Learn More" link. Note that not every feature point needs to be on this page -- sections should be kept short and even.'
+- info.more_info = '#'
+- info.image = '/img/screenshot-placeholder.png'
+- info.points = []
+- info.points.push({title: 'Bold Point Title.', content: 'Point content. Sentence or two. Maybe a link to specific page.'})
+- info.points.push({title: 'Bold Point Title.', content: 'Point content. Sentence or two. Maybe a link to specific page.'})
+
+mixin section(info)
+
+- info.header = 'Security'
+- info.intro = 'Something something.'
+- info.more_info = 'features/security'
+- info.image = '/img/screenshot-placeholder.png'
+- info.points = []
+- info.points.push({title: 'End-to-end, always-on encryption and security.', content: 'xxx'})
+- info.points.push({title: 'Object-level permissioning.', content: 'xxx'})
+- info.points.push({title: 'Strong authentication.', content: 'xxx'})
+- info.points.push({title: 'Digital signatures ensure authenticity and non-repudiation.', content: 'xxx'})
+- info.points.push({title: 'Transitive trust model.', content: 'xxx'})
+- info.points.push({title: 'No "Super User".', content: 'xxx'})
+
+mixin section(info)
+
+- info.header = 'Document Management'
+- info.intro = 'Something something.'
+- info.more_info = 'features/document-management'
+- info.image = '/img/screenshot-placeholder.png'
+- info.points = []
+- info.points.push({title: 'Delta versioning.', content: 'xxx'})
+- info.points.push({title: 'Check-in/check-out editorial control.', content: 'xxx'})
+- info.points.push({title: 'Auto-notification.', content: 'xxx'})
+- info.points.push({title: 'Document content and metadata search.', content: 'xxx'})
+- info.points.push({title: 'Customizable content structure.', content: 'xxx'})
+
+mixin section(info)
+
+- info.header = 'Chat'
+- info.intro = 'Something something.'
+- info.more_info = 'features/chat'
+- info.image = '/img/screenshot-placeholder.png'
+- info.points = []
+- info.points.push({title: 'Selective group.', content: 'xxx'})
+
+mixin section(info)
+
+- info.header = 'Messaging'
+- info.intro = 'Something something.'
+- info.more_info = 'features/messaging'
+- info.image = '/img/screenshot-placeholder.png'
+- info.points = []
+- info.points.push({title: 'Encrypted and digitally-signed messages.', content: 'xxx'})
+- info.points.push({title: 'Spell-checking.', content: 'xxx'})
+
+mixin section(info)
+
+- info.header = 'Bandwidth Optimization'
+- info.intro = 'Something something.'
+- info.more_info = 'features/bandwidth-optimization'
+- info.image = '/img/screenshot-placeholder.png'
+- info.points = []
+- info.points.push({title: 'Streaming encryption for efficient file transfers.', content: 'xxx'})
+- info.points.push({title: 'Delta versioning.', content: 'xxx'})
+- info.points.push({title: 'File compression.', content: 'xxx'})
+
+mixin section(info)
+
+- info.header = 'Client Mobility'
+- info.intro = 'Something something.'
+- info.more_info = 'features/client-mobility'
+- info.image = '/img/screenshot-placeholder.png'
+- info.points = []
+- info.points.push({title: 'Roaming secure workspace.', content: 'xxx'})
+- info.points.push({title: 'Data theft prevention and loss recovery.', content: 'xxx'})
+
+mixin section(info)
+
+- info.header = 'Usability'
+- info.intro = 'Something something.'
+- info.more_info = 'features/usability'
+- info.image = '/img/screenshot-placeholder.png'
+- info.points = []
+- info.points.push({title: 'Intuitive collaboration features.', content: 'xxx'})
+- info.points.push({title: 'Well-structured interface for minimal learning curve.', content: 'xxx'})
+
+mixin section(info)
+
+- info.header = 'Client-Server Architecture'
+- info.intro = 'Something something.'
+- info.more_info = 'features/client-server-architecture'
+- info.image = '/img/screenshot-placeholder.png'
+- info.points = []
+- info.points.push({title: 'Secure local repository for offline access.', content: 'xxx'})
+- info.points.push({title: 'Network connection to remote server.', content: 'xxx'})
+
+mixin section(info)
+
+- info.header = 'Installation and Configuration'
+- info.intro = 'Something something.'
+- info.more_info = 'features/installation-configuration'
+- info.image = '/img/screenshot-placeholder.png'
+- info.points = []
+- info.points.push({title: 'Broad platform support.', content: 'xxx'})
+- info.points.push({title: 'Simple installation with small footprint.', content: 'xxx'})
+- info.points.push({title: 'Auto-upgrade detection.', content: 'xxx'})
+
+mixin section(info)
 
 
 :stylus
 
-  .section-header
-    font-size: 1.5em
-    font-weight: bold
+  .section
+    margin-top: 2em
+    font-size: 1.1em
 
   .section-intro
-    x: x
+    margin-top: 1em
 
   .section-intro .more-info
     margin-left: 0.5em
 
   .section-points
-    x: x
+    margin-top: 1em
 
   .section-point
-    x: x
+    margin-top: 0.5em
 
   .section-point-title
     display: inline
@@ -288,8 +174,12 @@ nav: true
   .section-point-content
     display: inline
 
+  .section-image
+    margin-top: 1em
 
-:coffeescript(defer='defer')
+
+:coffeescript
+
   $ ->
 
     # Alternate content layout left-right
