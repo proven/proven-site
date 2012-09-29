@@ -1,0 +1,21 @@
+.navbar .brand {
+  font-size: 50px;
+  margin-top: 10px;
+}
+.navbar li a {
+  height: 40px;
+  font-size: 20px;
+  line-height: 40px;
+}
+.brand-logo {
+  height: 50px;
+  margin: 5px 5px 5px 0;
+}
+.page-header {
+  font-size: 3em;
+  font-weight: bold;
+}
+a,
+a:link {
+  cursor: pointer;
+}

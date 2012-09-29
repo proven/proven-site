@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lange="en">
+<head>
+  <!-- Meta -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Features | Ciphershare</title>
+  <meta name="description" content="A DocPad Skeleton useful for showcasing different features and functionality of DocPad. Implemented using Twitter Bootstrap." />
+  <meta name="keywords" content="place, your, website, keywoards, here, keep, them, related, to, the, content, of, your, website" />
+  <meta name="author" content="" />
+  <meta http-equiv="X-Powered-By" content="DocPad"/>
+
+  <!-- Icons -->
+  <link rel="shortcut icon" href="/img/favicon.ico">
+  <link rel="apple-touch-icon" href="/img/apple-touch-icon.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/img/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/img/apple-touch-icon-114x114.png">
+
+  <!-- Shims: IE6-8 support of HTML5 elements -->
+  <!--[if lt IE 9]>
+    <script async src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+
+  <!-- Styles -->
+  <!-- Note that our style.css must come after bootstrap and before bootstrap-responsive, or else the navbar gets messed up -->
+  <link rel="stylesheet" href="/vendor/bootstrap.css" /><link rel="stylesheet" href="/vendor/font-awesome.css" /><link rel="stylesheet" href="/vendor/bootstrap-responsive.css" /><link rel="stylesheet" href="/styles/style.css" />
+
+  <!-- Scripts -->
+  <!-- These *should* be below the body, but I want to use jQuery in inline scripts. -->
+  <script src="/vendor/jquery.min.js"></script>
+  <script  src="/socket.io/socket.io.js"></script><script >var socket = io.connect('/docpad-live-reload');
+socket.on('regenerated',function(){
+	document.location.reload();
+});</script><script defer="defer"  src="/vendor/bootstrap.js"></script><script defer="defer"  src="/scripts/script.js"></script>
+
+</head>
+<body>
+  <!-- Markup -->
+  <div class="navbar">
+    <div class="navbar-inner">
+      <div class="container">
+        <img class="brand-logo pull-left" src="/img/ciphershare-arrows.svg" />
+        <a class="brand" href="/">Ciphershare</a>
+        <ul class="nav">
+          
+            
+            <li typeof="sioc:Page" about="/features" class="active">
+              <a href="/features" property="dc:title">Features</a>
+            </li>
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+
+    <section id="content" class="content">
+      <h1>TODO</h1>
+<ul>
+<li>Fix typos, etc., from email.</li>
+<li>Cull some of the points from larger sections, like Security.</li>
+<li>Beef up descriptions in breakout files. Add short descriptions in this file (instead of &quot;xxx&quot;).</li>
+<li>Combine some of the small sections.</li>
+<li>Get rid of the dumber stuff.</li>
+<li>Use different icons for points? Probably.<ul>
+<li>Use images for points? Probably not -- too much work in short term.</li>
+</ul>
+</li>
+</ul>
+<h1>Features and Benefits</h1><div class="row section"><div class="span7 section-content"><h3 class="section-header">Section Header</h3><div class="section-intro">One paragraph section into that should end with a &quot;Learn More&quot; link. Note that not every feature point needs to be on this page -- sections should be kept short and even.<a href="#" class="more-info">Learn More</a></div><div class="section-points"><div class="section-point"><i class="icon-ok"></i><div class="section-point-title">Bold Point Title.</div><div class="section-point-content">Point content. Sentence or two. Maybe a link to specific page.</div></div><div class="section-point"><i class="icon-ok"></i><div class="section-point-title">Bold Point Title.</div><div class="section-point-content">Point content. Sentence or two. Maybe a link to specific page.</div></div></div></div><div class="span5 section-image"><a href="/img/screenshot-placeholder.png"><img src="/img/screenshot-placeholder.png"/></a></div></div><div class="row section"><div class="span7 section-content"><h3 class="section-header">Security</h3><div class="section-intro">Something something.<a href="features/security" class="more-info">Learn More</a></div><div class="section-points"><div class="section-point"><i class="icon-ok"></i><div class="section-point-title">End-to-end, always-on encryption and security.</div><div class="section-point-content">xxx</div></div><div class="section-point"><i class="icon-ok"></i><div class="section-point-title">Object-level permissioning.</div><div class="section-point-content">xxx</div></div><div class="section-point"><i class="icon-ok"></i><div class="section-point-title">Strong authentication.</div><div class="section-point-content">xxx</div></div><div class="section-point"><i class="icon-ok"></i><div class="section-point-title">Digital signatures ensure authenticity and non-repudiation.</div><div class="section-point-content">xxx</div></div><div class="section-point"><i class="icon-ok"></i><div class="section-point-title">Transitive trust model.</div><div class="section-point-content">xxx</div></div><div class="section-point"><i class="icon-ok"></i><div class="section-point-title">No &quot;Super User&quot;.</div><div class="section-point-content">xxx</div></div></div></div><div class="span5 section-image"><a href="/img/screenshot-placeholder.png"><img src="/img/screenshot-placeholder.png"/></a></div></div><div class="row section"><div class="span7 section-content"><h3 class="section-header">Document Management</h3><div class="section-intro">Something something.<a href="features/document-management" class="more-info">Learn More</a></div><div class="section-points"><div class="section-point"><i class="icon-ok"></i><div class="section-point-title">Delta versioning.</div><div class="section-point-content">xxx</div></div><div class="section-point"><i class="icon-ok"></i><div class="section-point-title">Check-in/check-out editorial control.</div><div class="section-point-content">xxx</div></div><div class="section-point"><i class="icon-ok"></i><div class="section-point-title">Auto-notification.</div><div class="section-point-content">xxx</div></div><div class="section-point"><i class="icon-ok"></i><div class="section-point-title">Document content and metadata search.</div><div class="section-point-content">xxx</div></div><div class="section-point"><i class="icon-ok"></i><div class="section-point-title">Customizable content structure.</div><div class="section-point-content">xxx</div></div></div></div><div class="span5 section-image"><a href="/img/screenshot-placeholder.png"><img src="/img/screenshot-placeholder.png"/></a></div></div><div class="row section"><div class="span7 section-content"><h3 class="section-header">Chat</h3><div class="section-intro">Something something.<a href="features/chat" class="more-info">Learn More</a></div><div class="section-points"><div class="section-point"><i class="icon-ok"></i><div class="section-point-title">Selective group.</div><div class="section-point-content">xxx</div></div></div></div><div class="span5 section-image"><a href="/img/screenshot-placeholder.png"><img src="/img/screenshot-placeholder.png"/></a></div></div><div class="row section"><div class="span7 section-content"><h3 class="section-header">Messaging</h3><div class="section-intro">Something something.<a href="features/messaging" class="more-info">Learn More</a></div><div class="section-points"><div class="section-point"><i class="icon-ok"></i><div class="section-point-title">Encrypted and digitally-signed messages.</div><div class="section-point-content">xxx</div></div><div class="section-point"><i class="icon-ok"></i><div class="section-point-title">Spell-checking.</div><div class="section-point-content">xxx</div></div></div></div><div class="span5 section-image"><a href="/img/screenshot-placeholder.png"><img src="/img/screenshot-placeholder.png"/></a></div></div><div class="row section"><div class="span7 section-content"><h3 class="section-header">Bandwidth Optimization</h3><div class="section-intro">Something something.<a href="features/bandwidth-optimization" class="more-info">Learn More</a></div><div class="section-points"><div class="section-point"><i class="icon-ok"></i><div class="section-point-title">Streaming encryption for efficient file transfers.</div><div class="section-point-content">xxx</div></div><div class="section-point"><i class="icon-ok"></i><div class="section-point-title">Delta versioning.</div><div class="section-point-content">xxx</div></div><div class="section-point"><i class="icon-ok"></i><div class="section-point-title">File compression.</div><div class="section-point-content">xxx</div></div></div></div><div class="span5 section-image"><a href="/img/screenshot-placeholder.png"><img src="/img/screenshot-placeholder.png"/></a></div></div><div class="row section"><div class="span7 section-content"><h3 class="section-header">Client Mobility</h3><div class="section-intro">Something something.<a href="features/client-mobility" class="more-info">Learn More</a></div><div class="section-points"><div class="section-point"><i class="icon-ok"></i><div class="section-point-title">Roaming secure workspace.</div><div class="section-point-content">xxx</div></div><div class="section-point"><i class="icon-ok"></i><div class="section-point-title">Data theft prevention and loss recovery.</div><div class="section-point-content">xxx</div></div></div></div><div class="span5 section-image"><a href="/img/screenshot-placeholder.png"><img src="/img/screenshot-placeholder.png"/></a></div></div><div class="row section"><div class="span7 section-content"><h3 class="section-header">Usability</h3><div class="section-intro">Something something.<a href="features/usability" class="more-info">Learn More</a></div><div class="section-points"><div class="section-point"><i class="icon-ok"></i><div class="section-point-title">Intuitive collaboration features.</div><div class="section-point-content">xxx</div></div><div class="section-point"><i class="icon-ok"></i><div class="section-point-title">Well-structured interface for minimal learning curve.</div><div class="section-point-content">xxx</div></div></div></div><div class="span5 section-image"><a href="/img/screenshot-placeholder.png"><img src="/img/screenshot-placeholder.png"/></a></div></div><div class="row section"><div class="span7 section-content"><h3 class="section-header">Client-Server Architecture</h3><div class="section-intro">Something something.<a href="features/client-server-architecture" class="more-info">Learn More</a></div><div class="section-points"><div class="section-point"><i class="icon-ok"></i><div class="section-point-title">Secure local repository for offline access.</div><div class="section-point-content">xxx</div></div><div class="section-point"><i class="icon-ok"></i><div class="section-point-title">Network connection to remote server.</div><div class="section-point-content">xxx</div></div></div></div><div class="span5 section-image"><a href="/img/screenshot-placeholder.png"><img src="/img/screenshot-placeholder.png"/></a></div></div><div class="row section"><div class="span7 section-content"><h3 class="section-header">Installation and Configuration</h3><div class="section-intro">Something something.<a href="features/installation-configuration" class="more-info">Learn More</a></div><div class="section-points"><div class="section-point"><i class="icon-ok"></i><div class="section-point-title">Broad platform support.</div><div class="section-point-content">xxx</div></div><div class="section-point"><i class="icon-ok"></i><div class="section-point-title">Simple installation with small footprint.</div><div class="section-point-content">xxx</div></div><div class="section-point"><i class="icon-ok"></i><div class="section-point-title">Auto-upgrade detection.</div><div class="section-point-content">xxx</div></div></div></div><div class="span5 section-image"><a href="/img/screenshot-placeholder.png"><img src="/img/screenshot-placeholder.png"/></a></div></div><style type="text/css">.section {
+  margin-top: 2em;
+  font-size: 1.1em;
+}
+.section-intro {
+  margin-top: 1em;
+}
+.section-intro .more-info {
+  margin-left: 0.5em;
+}
+.section-points {
+  margin-top: 1em;
+}
+.section-point {
+  margin-top: 0.5em;
+}
+.section-point > i {
+  margin-right: 0.5em;
+}
+.section-point-title {
+  display: inline;
+  font-weight: bold;
+  margin-right: 0.5em;
+}
+.section-point-content {
+  display: inline;
+}
+.section-image {
+  margin-top: 1em;
+}
+.section-image img {
+  max-height: 25em;
+}
+</style><script type="text/javascript">
+(function() {
+
+  $(function() {
+    $('.section-content').each(function(idx, item) {
+      if ((idx % 2) === 0) {
+        return $(item).addClass('pull-left');
+      } else {
+        return $(item).addClass('pull-right');
+      }
+    });
+    return $('.section-image').each(function(idx, item) {
+      if ((idx % 2) === 0) {
+        return $(item).addClass('pull-left');
+      } else {
+        return $(item).addClass('pull-right');
+      }
+    });
+  });
+
+}).call(this);
+</script>
+    </section>
+
+    <footer>
+      <p>&copy; Proven Security Solutions Inc.</p>
+    </footer>
+
+  </div><!-- /container -->
+
+</body>
+</html>
