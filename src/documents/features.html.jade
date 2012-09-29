@@ -12,8 +12,8 @@ nav: true
   * Beef up descriptions in breakout files. Add short descriptions in this file (instead of "xxx").
   * Combine some of the small sections.
   * Get rid of the dumber stuff.
-  * Size the screenshots better.
-  * Use cutesy images for `section-point` bullets?
+  * Use different icons for points? Probably.
+    * Use images for points? Probably not -- too much work in short term.
 
 
 h1 Features and Benefits
@@ -180,6 +180,9 @@ mixin section(info)
 
   .section-image
     margin-top: 1em
+
+  .section-image img
+    max-height: 25em
 
 
 :coffeescript
