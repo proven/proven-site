@@ -1,9 +1,14 @@
 // Make the navbar a little fatter than default.
 navbar_height = 60px
+brand_font_size = 50px
+
+@media (max-width: 480px)
+  navbar_height = 100px
 
 .navbar .brand
-  font-size: 50px
-  margin-top: 10px
+  font-size: brand_font_size
+  line-height: brand_font_size - 10px
+  white-space: nowrap
 
 .navbar li a
   height: navbar_height - 20px
@@ -11,8 +16,8 @@ navbar_height = 60px
   line-height: @height
 
 .brand-logo
-  height: navbar_height - 10px
-  margin: ((navbar_height - @height)/2) 5px ((navbar_height - @height)/2) 0
+  height: navbar_height - 20px
+  margin-right: 0.2em
 
 .page-header
   font-size: 3em
@@ -21,3 +26,8 @@ navbar_height = 60px
 // This came default with this file, but it is really necessary?
 a, a:link
   cursor pointer
+
+@media (max-width: 480px)
+  .navbar .brand
+    // The text is too large on a small display
+    font-size: 30px

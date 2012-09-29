@@ -38,8 +38,12 @@
   <div class="navbar">
     <div class="navbar-inner">
       <div class="container">
-        <img class="brand-logo pull-left" src="/img/ciphershare-arrows.svg" />
-        <a class="brand" href="/"><%= @getPreparedBrand() %></a>
+
+        <a class="brand" href="/">
+          <img class="brand-logo pull-left" src="/img/ciphershare-arrows.svg" />
+          <%= @getPreparedBrand() %>
+        </a>
+
         <ul class="nav">
           <% for document in @getCollection('documents').toJSON(): %>
             <% if document.meta.nav: %>
