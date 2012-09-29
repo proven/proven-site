@@ -1,13 +1,26 @@
 --- yaml
-layout: 'default'
+layout: 'features-page'
 title: 'Features: Usability'
 nav: false
 ---
 
-.page-header Usability
 
-.section-header Intuitive collaboration features
-.section-content Ciphershare uses intuitive, generally-accepted editing and document management features, including “check-in/check-out”, document locking, auto-versioning and auto-notification.
+include _template.mixin.jade
 
-.section-header Well-structured interface for minimal learning curve
-.section-content Ciphershare functions are easy to learn.
+mixin page_title('Usability')
+
+- var info, points
+
+- feature = {header: '', intro: '', points: []}
+- feature.header = 'Intuitive collaboration features'
+- feature.intro = "Ciphershare uses intuitive, generally-accepted editing and document management features, including “check-in/check-out”, document locking, auto-versioning and auto-notification."
+- feature.points.push({content: 'xxx'})
+
+mixin feature_info(feature)
+
+- feature = {header: '', intro: '', points: []}
+- feature.header = 'Well-structured interface for minimal learning curve'
+- feature.intro = "Ciphershare functions are easy to learn."
+- feature.points.push({content: 'xxx'})
+
+mixin feature_info(feature)

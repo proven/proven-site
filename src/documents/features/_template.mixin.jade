@@ -1,0 +1,13 @@
+mixin page_title(title)
+  h1= title
+
+mixin feature_info(info)
+  .feature
+    h3.feature-header= info.header
+    .feature-intro= info.intro
+
+  .points
+    each point in info.points
+      .point
+        i.icon-ok
+        .point-content= point.content

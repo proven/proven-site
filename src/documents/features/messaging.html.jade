@@ -1,13 +1,26 @@
 --- yaml
-layout: 'default'
+layout: 'features-page'
 title: 'Features: Messaging'
 nav: false
 ---
 
-.page-header Messaging
 
-.section-header Encrypted and digitally-signed messages
-.section-content Confidentiality, authenticity and non-repudiation for all messages.
+include _template.mixin.jade
 
-.section-header Spell-checking
-.section-content Ciphershare provides integrated spell-checking for all messages and chat sessions.
+mixin page_title('Messaging')
+
+- var info, points
+
+- feature = {header: '', intro: '', points: []}
+- feature.header = 'Encrypted and digitally-signed messages'
+- feature.intro = "Confidentiality, authenticity and non-repudiation for all messages."
+- feature.points.push({content: 'xxx'})
+
+mixin feature_info(feature)
+
+- feature = {header: '', intro: '', points: []}
+- feature.header = 'Spell-checking'
+- feature.intro = "Ciphershare provides integrated spell-checking for all messages and chat sessions."
+- feature.points.push({content: 'xxx'})
+
+mixin feature_info(feature)

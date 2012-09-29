@@ -1,22 +1,49 @@
 --- yaml
-layout: 'default'
+layout: 'features-page'
 title: 'Features: Security'
 nav: false
 ---
 
-.page-header Security
 
-.section-header Delta versioning
-.section-content Ciphershare offers delta versioning of all file formats. Each delta is digitally signed. Ciphershare maintains an auditable version history of any file or document enabling non-repudiation at the version/modification level.
+include _template.mixin.jade
 
-.section-header Check-in/check-out editorial control
-.section-content Ciphershare offers check-in/check-out and document locking to ensure that editorial conflicts do not occur, and that version histories can be fully tracked and audited.
+mixin page_title('Security')
 
-.section-header Auto-notification
-.section-content Ciphershare broadcasts encrypted notifications of document changes to authorized members of a share list. Workgroup members benefit from real-time interaction.
+- var info, points
 
-.section-header Document content and metadata search
-.section-content Ciphershare provides comprehensive search and filtering functions.
+- feature = {header: '', intro: '', points: []}
+- feature.header = 'Delta versioning'
+- feature.intro = "Ciphershare offers delta versioning of all file formats. Each delta is digitally signed. Ciphershare maintains an auditable version history of any file or document enabling non-repudiation at the version/modification level."
+- feature.points.push({content: 'xxx'})
+- feature.points.push({content: 'xxx'})
+- feature.points.push({content: 'xxx'})
 
-.section-header Customizable content structure
-.section-content Ciphershare offers a fully-customizable n-tier file structure, allowing workgroups to organize content in ways that support their knowledge management practices.
+mixin feature_info(feature)
+
+- feature = {header: '', intro: '', points: []}
+- feature.header = 'Check-in/check-out editorial control'
+- feature.intro = "Ciphershare offers check-in/check-out and document locking to ensure that editorial conflicts do not occur, and that version histories can be fully tracked and audited."
+- feature.points.push({content: 'xxx'})
+
+mixin feature_info(feature)
+
+- feature = {header: '', intro: '', points: []}
+- feature.header = 'Auto-notification'
+- feature.intro = "Ciphershare broadcasts encrypted notifications of document changes to authorized members of a share list. Workgroup members benefit from real-time interaction."
+- feature.points.push({content: 'xxx'})
+
+mixin feature_info(feature)
+
+- feature = {header: '', intro: '', points: []}
+- feature.header = 'Document content and metadata search'
+- feature.intro = "Ciphershare provides comprehensive search and filtering functions."
+- feature.points.push({content: 'xxx'})
+
+mixin feature_info(feature)
+
+- feature = {header: '', intro: '', points: []}
+- feature.header = 'Customizable content structure'
+- feature.intro = "Ciphershare offers a fully-customizable n-tier file structure, allowing workgroups to organize content in ways that support their knowledge management practices."
+- feature.points.push({content: 'xxx'})
+
+mixin feature_info(feature)

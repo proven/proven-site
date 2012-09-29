@@ -1,13 +1,26 @@
 --- yaml
-layout: 'default'
+layout: 'features-page'
 title: 'Features: Client Mobility'
 nav: false
 ---
 
-.page-header Client Mobility
 
-.section-header Roaming secure workspace
-.section-content Roaming with Ciphershare requires only a TCP/IP connection to the Ciphershare server.
+include _template.mixin.jade
 
-.section-header Data theft prevention and loss recovery
-.section-content Ciphershare's encrypted local cache ensures the confidentiality of data in the event of laptop theft. Ciphershare users can easily recover lost data simply by re-installing the Ciphershare client and connecting to the Ciphershare server.
+mixin page_title('Client Mobility')
+
+- var info, points
+
+- feature = {header: '', intro: '', points: []}
+- feature.header = 'Roaming secure workspace'
+- feature.intro = 'Roaming with Ciphershare requires only a TCP/IP connection to the Ciphershare server.'
+- feature.points.push({content: 'xxx'})
+
+mixin feature_info(feature)
+
+- feature = {header: '', intro: '', points: []}
+- feature.header = 'Data theft prevention and loss recovery'
+- feature.intro = "Ciphershare's encrypted local cache ensures the confidentiality of data in the event of laptop theft. Ciphershare users can easily recover lost data simply by re-installing the Ciphershare client and connecting to the Ciphershare server."
+- feature.points.push({content: 'xxx'})
+
+mixin feature_info(feature)

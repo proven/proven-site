@@ -21,9 +21,9 @@ h1 Features and Benefits
 mixin section(info)
   .row.section
     .span7.section-content
-      h3.section-header #{info.header}
+      h3.section-header= info.header
 
-      .section-intro #{info.intro}
+      .section-intro= info.intro
         a.more-info(href=info.more_info) Learn More
 
       .section-points
@@ -31,8 +31,8 @@ mixin section(info)
         each point in info.points
           .section-point
             i(class=point.icon)
-            .section-point-title #{point.title}
-            .section-point-content #{point.content}
+            .section-point-title= point.title
+            .section-point-content= point.content
 
     .span5.section-image
       a(href=info.image)

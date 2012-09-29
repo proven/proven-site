@@ -1,25 +1,54 @@
 --- yaml
-layout: 'default'
+layout: 'features-page'
 title: 'Features: Document Management'
 nav: false
 ---
 
-.page-header Document Management
 
-.section-header End-to-end, always-on encryption and security
-.section-content Ciphershare provides transparent encryption of all data at rest and in transit. Files, messages and chat sessions are encrypted centrally, locally and during transmission.
+include _template.mixin.jade
 
-.section-header Object-level permissioning
-.section-content Ciphershare provides highly granular sharing of files, messages and chat sessions. Users see only the information that has been explicitly shared with them. Without access privileges, users have no access to, or even knowledge of, sensitive information.
+mixin page_title('Document Management')
 
-.section-header Strong authentication
-.section-content Ciphershare utilizes a variety of strong authentication techniques to ensure users are who they claim to be.
+- var info, points
 
-.section-header Digital signatures ensure authenticity and non-repudiation
-.section-content Ciphershare applies digital signatures to key data objects, including documents, files, messages, chat sessions and share lists. Digital signatures ensure that data objects are authentic, and that actions performed by users are non-repudiable.
+- feature = {header: '', intro: '', points: []}
+- feature.header = 'End-to-end, always-on encryption and security'
+- feature.intro = "Ciphershare provides transparent encryption of all data at rest and in transit. Files, messages and chat sessions are encrypted centrally, locally and during transmission."
+- feature.points.push({content: 'xxx'})
 
-.section-header Transitive trust model
-.section-content Ciphershare uses a transitive model to develop trusted relationships and enable rapid and secure authentication. A single Security Officer can verify the authenticity of each member of a workgroup, and forward authentication status to all other members.
+mixin feature_info(feature)
 
-.section-header No 'Super User'
-.section-content Ciphershare separates administrative functions from content, preventing 'rogue' administrators from accessing sensitive information.
+- feature = {header: '', intro: '', points: []}
+- feature.header = 'Object-level permissioning'
+- feature.intro = "Ciphershare provides highly granular sharing of files, messages and chat sessions. Users see only the information that has been explicitly shared with them. Without access privileges, users have no access to, or even knowledge of, sensitive information."
+- feature.points.push({content: 'xxx'})
+
+mixin feature_info(feature)
+
+- feature = {header: '', intro: '', points: []}
+- feature.header = 'Strong authentication'
+- feature.intro = "Ciphershare utilizes a variety of strong authentication techniques to ensure users are who they claim to be."
+- feature.points.push({content: 'xxx'})
+
+mixin feature_info(feature)
+
+- feature = {header: '', intro: '', points: []}
+- feature.header = 'Digital signatures ensure authenticity and non-repudiation'
+- feature.intro = "Ciphershare applies digital signatures to key data objects, including documents, files, messages, chat sessions and share lists. Digital signatures ensure that data objects are authentic, and that actions performed by users are non-repudiable."
+- feature.points.push({content: 'xxx'})
+
+mixin feature_info(feature)
+
+- feature = {header: '', intro: '', points: []}
+- feature.header = 'Transitive trust model'
+- feature.intro = "Ciphershare uses a transitive model to develop trusted relationships and enable rapid and secure authentication. A single Security Officer can verify the authenticity of each member of a workgroup, and forward authentication status to all other members."
+- feature.points.push({content: 'xxx'})
+
+mixin feature_info(feature)
+
+- feature = {header: '', intro: '', points: []}
+- feature.header = "No 'Super User'"
+- feature.intro = "Ciphershare separates administrative functions from content, preventing 'rogue' administrators from accessing sensitive information."
+- feature.points.push({content: 'xxx'})
+
+mixin feature_info(feature)

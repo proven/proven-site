@@ -1,10 +1,19 @@
 --- yaml
-layout: 'default'
+layout: 'features-page'
 title: 'Features: Chat'
 nav: false
 ---
 
-.page-header Chat
 
-.section-header Selective group
-.section-content Ciphershare enables private, encrypted chat sessions between members of a workgroup. System resource constraints notwithstanding, the number of simultaneous chat sessions is unlimited.
+include _template.mixin.jade
+
+mixin page_title('Chat')
+
+- var info, points
+
+- feature = {header: '', intro: '', points: []}
+- feature.header = 'Selective group'
+- feature.intro = 'Ciphershare enables private, encrypted chat sessions between members of a workgroup. System resource constraints notwithstanding, the number of simultaneous chat sessions is unlimited.'
+- feature.points.push({content: 'xxx'})
+
+mixin feature_info(feature)

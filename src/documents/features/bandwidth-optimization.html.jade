@@ -1,16 +1,32 @@
 --- yaml
-layout: 'default'
+layout: 'features-page'
 title: 'Features: Bandwidth Optimization'
 nav: false
 ---
 
-.page-header Bandwidth Optimization
+include _template.mixin.jade
 
-.section-header Streaming encryption for efficient file transfers
-.section-content Ciphershare utilizes efficient streaming encryption and smart upload/download managers to offer full resumability of interrupted file transfers. This is particularly useful for large file transfers, such as movie clips, audio files or CAD/CAM documents.
+mixin page_title('Bandwidth Optimization')
 
-.section-header Delta versioning
-.section-content Ciphershare uses delta versioning to minimize data transfer and optimize bandwidth utilization.
+- var info, points
 
-.section-header File compression
-.section-content All data stored and transferred through Ciphershare is compressed prior to encryption, for more efficient utilization of data storage and network resources. Compression ratios of up to 15:1 can be achieved, depending on file format.
+- feature = {header: '', intro: '', points: []}
+- feature.header = 'Streaming encryption for efficient file transfers'
+- feature.intro = 'Ciphershare utilizes efficient streaming encryption and smart upload/download managers to offer full resumability of interrupted file transfers. This is particularly useful for large file transfers, such as movie clips, audio files or CAD/CAM documents.'
+- feature.points.push({content: 'xxx'})
+
+mixin feature_info(feature)
+
+- feature = {header: '', intro: '', points: []}
+- feature.header = 'Delta versioning'
+- feature.intro = 'Ciphershare uses delta versioning to minimize data transfer and optimize bandwidth utilization.'
+- feature.points.push({content: 'xxx'})
+
+mixin feature_info(feature)
+
+- feature = {header: '', intro: '', points: []}
+- feature.header = 'File compression'
+- feature.intro = 'All data stored and transferred through Ciphershare is compressed prior to encryption, for more efficient utilization of data storage and network resources. Compression ratios of up to 15:1 can be achieved, depending on file format.'
+- feature.points.push({content: 'xxx'})
+
+mixin feature_info(feature)
