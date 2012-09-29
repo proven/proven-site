@@ -30,6 +30,7 @@ mixin section(info)
 
         each point in info.points
           .section-point
+            i(class=point.icon)
             .section-point-title #{point.title}
             .section-point-content #{point.content}
 
@@ -44,8 +45,8 @@ mixin section(info)
 - info.more_info = '#'
 - info.image = '/img/screenshot-placeholder.png'
 - info.points = []
-- info.points.push({title: 'Bold Point Title.', content: 'Point content. Sentence or two. Maybe a link to specific page.'})
-- info.points.push({title: 'Bold Point Title.', content: 'Point content. Sentence or two. Maybe a link to specific page.'})
+- info.points.push({title: 'Bold Point Title.', content: 'Point content. Sentence or two. Maybe a link to specific page.', icon: 'icon-ok'})
+- info.points.push({title: 'Bold Point Title.', content: 'Point content. Sentence or two. Maybe a link to specific page.', icon: 'icon-ok'})
 
 mixin section(info)
 
@@ -54,12 +55,12 @@ mixin section(info)
 - info.more_info = 'features/security'
 - info.image = '/img/screenshot-placeholder.png'
 - info.points = []
-- info.points.push({title: 'End-to-end, always-on encryption and security.', content: 'xxx'})
-- info.points.push({title: 'Object-level permissioning.', content: 'xxx'})
-- info.points.push({title: 'Strong authentication.', content: 'xxx'})
-- info.points.push({title: 'Digital signatures ensure authenticity and non-repudiation.', content: 'xxx'})
-- info.points.push({title: 'Transitive trust model.', content: 'xxx'})
-- info.points.push({title: 'No "Super User".', content: 'xxx'})
+- info.points.push({title: 'End-to-end, always-on encryption and security.', content: 'xxx', icon: 'icon-ok'})
+- info.points.push({title: 'Object-level permissioning.', content: 'xxx', icon: 'icon-ok'})
+- info.points.push({title: 'Strong authentication.', content: 'xxx', icon: 'icon-ok'})
+- info.points.push({title: 'Digital signatures ensure authenticity and non-repudiation.', content: 'xxx', icon: 'icon-ok'})
+- info.points.push({title: 'Transitive trust model.', content: 'xxx', icon: 'icon-ok'})
+- info.points.push({title: 'No "Super User".', content: 'xxx', icon: 'icon-ok'})
 
 mixin section(info)
 
@@ -68,11 +69,11 @@ mixin section(info)
 - info.more_info = 'features/document-management'
 - info.image = '/img/screenshot-placeholder.png'
 - info.points = []
-- info.points.push({title: 'Delta versioning.', content: 'xxx'})
-- info.points.push({title: 'Check-in/check-out editorial control.', content: 'xxx'})
-- info.points.push({title: 'Auto-notification.', content: 'xxx'})
-- info.points.push({title: 'Document content and metadata search.', content: 'xxx'})
-- info.points.push({title: 'Customizable content structure.', content: 'xxx'})
+- info.points.push({title: 'Delta versioning.', content: 'xxx', icon: 'icon-ok'})
+- info.points.push({title: 'Check-in/check-out editorial control.', content: 'xxx', icon: 'icon-ok'})
+- info.points.push({title: 'Auto-notification.', content: 'xxx', icon: 'icon-ok'})
+- info.points.push({title: 'Document content and metadata search.', content: 'xxx', icon: 'icon-ok'})
+- info.points.push({title: 'Customizable content structure.', content: 'xxx', icon: 'icon-ok'})
 
 mixin section(info)
 
@@ -81,7 +82,7 @@ mixin section(info)
 - info.more_info = 'features/chat'
 - info.image = '/img/screenshot-placeholder.png'
 - info.points = []
-- info.points.push({title: 'Selective group.', content: 'xxx'})
+- info.points.push({title: 'Selective group.', content: 'xxx', icon: 'icon-ok'})
 
 mixin section(info)
 
@@ -90,8 +91,8 @@ mixin section(info)
 - info.more_info = 'features/messaging'
 - info.image = '/img/screenshot-placeholder.png'
 - info.points = []
-- info.points.push({title: 'Encrypted and digitally-signed messages.', content: 'xxx'})
-- info.points.push({title: 'Spell-checking.', content: 'xxx'})
+- info.points.push({title: 'Encrypted and digitally-signed messages.', content: 'xxx', icon: 'icon-ok'})
+- info.points.push({title: 'Spell-checking.', content: 'xxx', icon: 'icon-ok'})
 
 mixin section(info)
 
@@ -100,9 +101,9 @@ mixin section(info)
 - info.more_info = 'features/bandwidth-optimization'
 - info.image = '/img/screenshot-placeholder.png'
 - info.points = []
-- info.points.push({title: 'Streaming encryption for efficient file transfers.', content: 'xxx'})
-- info.points.push({title: 'Delta versioning.', content: 'xxx'})
-- info.points.push({title: 'File compression.', content: 'xxx'})
+- info.points.push({title: 'Streaming encryption for efficient file transfers.', content: 'xxx', icon: 'icon-ok'})
+- info.points.push({title: 'Delta versioning.', content: 'xxx', icon: 'icon-ok'})
+- info.points.push({title: 'File compression.', content: 'xxx', icon: 'icon-ok'})
 
 mixin section(info)
 
@@ -111,8 +112,8 @@ mixin section(info)
 - info.more_info = 'features/client-mobility'
 - info.image = '/img/screenshot-placeholder.png'
 - info.points = []
-- info.points.push({title: 'Roaming secure workspace.', content: 'xxx'})
-- info.points.push({title: 'Data theft prevention and loss recovery.', content: 'xxx'})
+- info.points.push({title: 'Roaming secure workspace.', content: 'xxx', icon: 'icon-ok'})
+- info.points.push({title: 'Data theft prevention and loss recovery.', content: 'xxx', icon: 'icon-ok'})
 
 mixin section(info)
 
@@ -121,8 +122,8 @@ mixin section(info)
 - info.more_info = 'features/usability'
 - info.image = '/img/screenshot-placeholder.png'
 - info.points = []
-- info.points.push({title: 'Intuitive collaboration features.', content: 'xxx'})
-- info.points.push({title: 'Well-structured interface for minimal learning curve.', content: 'xxx'})
+- info.points.push({title: 'Intuitive collaboration features.', content: 'xxx', icon: 'icon-ok'})
+- info.points.push({title: 'Well-structured interface for minimal learning curve.', content: 'xxx', icon: 'icon-ok'})
 
 mixin section(info)
 
@@ -131,8 +132,8 @@ mixin section(info)
 - info.more_info = 'features/client-server-architecture'
 - info.image = '/img/screenshot-placeholder.png'
 - info.points = []
-- info.points.push({title: 'Secure local repository for offline access.', content: 'xxx'})
-- info.points.push({title: 'Network connection to remote server.', content: 'xxx'})
+- info.points.push({title: 'Secure local repository for offline access.', content: 'xxx', icon: 'icon-ok'})
+- info.points.push({title: 'Network connection to remote server.', content: 'xxx', icon: 'icon-ok'})
 
 mixin section(info)
 
@@ -141,9 +142,9 @@ mixin section(info)
 - info.more_info = 'features/installation-configuration'
 - info.image = '/img/screenshot-placeholder.png'
 - info.points = []
-- info.points.push({title: 'Broad platform support.', content: 'xxx'})
-- info.points.push({title: 'Simple installation with small footprint.', content: 'xxx'})
-- info.points.push({title: 'Auto-upgrade detection.', content: 'xxx'})
+- info.points.push({title: 'Broad platform support.', content: 'xxx', icon: 'icon-ok'})
+- info.points.push({title: 'Simple installation with small footprint.', content: 'xxx', icon: 'icon-ok'})
+- info.points.push({title: 'Auto-upgrade detection.', content: 'xxx', icon: 'icon-ok'})
 
 mixin section(info)
 
@@ -165,6 +166,9 @@ mixin section(info)
 
   .section-point
     margin-top: 0.5em
+
+  .section-point > i
+    margin-right: 0.5em
 
   .section-point-title
     display: inline

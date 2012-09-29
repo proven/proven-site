@@ -25,7 +25,7 @@
 
   <!-- Styles -->
   <!-- Note that our style.css must come after bootstrap and before bootstrap-responsive, or else the navbar gets messed up -->
-  <%- @getBlock('styles').add(["/vendor/bootstrap.css","/styles/style.css","/vendor/bootstrap-responsive.css"]).toHTML() %>
+  <%- @getBlock('styles').add(["/vendor/bootstrap.css","/vendor/font-awesome.css","/styles/style.css","/vendor/bootstrap-responsive.css"]).toHTML() %>
 
   <!-- Scripts -->
   <!-- These *should* be below the body, but I want to use jQuery in inline scripts. -->
