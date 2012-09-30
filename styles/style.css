@@ -1,21 +1,7 @@
-.navbar .brand {
-  font-size: 50px;
-  margin-top: 10px;
-}
-.navbar li a {
-  height: 40px;
-  font-size: 20px;
-  line-height: 40px;
-}
-.brand-logo {
-  height: 50px;
-  margin: 5px 5px 5px 0;
-}
-.page-header {
-  font-size: 3em;
-  font-weight: bold;
-}
-a,
-a:link {
-  cursor: pointer;
+@media (max-width: 480px){}.navbar .brand{font-size:50px;line-height:40px;white-space:nowrap}
+.navbar li a{height:40px;font-size:20px;line-height:40px}
+.brand-logo{height:40px;margin-right:.2em}
+.page-header{font-size:3em;font-weight:bold}
+a,a:link{cursor:pointer}
+@media (max-width: 480px){.navbar .brand{font-size:30px}
 }

@@ -13,10 +13,10 @@
   <meta http-equiv="X-Powered-By" content="DocPad"/>
 
   <!-- Icons -->
-  <link rel="shortcut icon" href="/img/favicon.ico">
-  <link rel="apple-touch-icon" href="/img/apple-touch-icon.png">
-  <link rel="apple-touch-icon" sizes="72x72" href="/img/apple-touch-icon-72x72.png">
-  <link rel="apple-touch-icon" sizes="114x114" href="/img/apple-touch-icon-114x114.png">
+  <link rel="shortcut icon" href="./../img/favicon.ico">
+  <link rel="apple-touch-icon" href="./../img/apple-touch-icon.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="./../img/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="./../img/apple-touch-icon-114x114.png">
 
   <!-- Shims: IE6-8 support of HTML5 elements -->
   <!--[if lt IE 9]>
@@ -25,15 +25,12 @@
 
   <!-- Styles -->
   <!-- Note that our style.css must come after bootstrap and before bootstrap-responsive, or else the navbar gets messed up -->
-  <link rel="stylesheet" href="/vendor/bootstrap.css" /><link rel="stylesheet" href="/vendor/font-awesome.css" /><link rel="stylesheet" href="/vendor/bootstrap-responsive.css" /><link rel="stylesheet" href="/styles/style.css" />
+  <link rel="stylesheet" href="./../vendor/bootstrap.css" /><link rel="stylesheet" href="./../vendor/font-awesome.css" /><link rel="stylesheet" href="./../vendor/bootstrap-responsive.css" /><link rel="stylesheet" href="./../styles/style.css" />
 
   <!-- Scripts -->
   <!-- These *should* be below the body, but I want to use jQuery in inline scripts. -->
-  <script src="/vendor/jquery.min.js"></script>
-  <script  src="/socket.io/socket.io.js"></script><script >var socket = io.connect('/docpad-live-reload');
-socket.on('regenerated',function(){
-	document.location.reload();
-});</script><script defer="defer"  src="/vendor/bootstrap.js"></script><script defer="defer"  src="/scripts/script.js"></script>
+  <script src="./../vendor/jquery.min.js"></script>
+  <script defer="defer"  src="./../vendor/bootstrap.js"></script><script defer="defer"  src="./../scripts/script.js"></script>
 
 </head>
 <body>
@@ -41,18 +38,22 @@ socket.on('regenerated',function(){
   <div class="navbar">
     <div class="navbar-inner">
       <div class="container">
-        <img class="brand-logo pull-left" src="/img/ciphershare-arrows.svg" />
-        <a class="brand" href="/">Ciphershare</a>
+
+        <a class="brand" href="/">
+          <img class="brand-logo pull-left" src="./../img/ciphershare-arrows.svg" />
+          Ciphershare
+        </a>
+
         <ul class="nav">
           
             
-            <li typeof="sioc:Page" about="/features" class="">
-              <a href="/features" property="dc:title">Features</a>
+          
+            
+          
+            
+            <li typeof="sioc:Page" about="/features.html" class="">
+              <a href="/features.html" property="dc:title">Features</a>
             </li>
-            
-          
-            
-          
             
           
             
