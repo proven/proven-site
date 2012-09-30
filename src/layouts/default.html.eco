@@ -13,10 +13,10 @@
   <%- @getBlock('meta').toHTML() %>
 
   <!-- Icons -->
-  <link rel="shortcut icon" href="/img/favicon.ico">
-  <link rel="apple-touch-icon" href="/img/apple-touch-icon.png">
-  <link rel="apple-touch-icon" sizes="72x72" href="/img/apple-touch-icon-72x72.png">
-  <link rel="apple-touch-icon" sizes="114x114" href="/img/apple-touch-icon-114x114.png">
+  <link rel="shortcut icon" href="<%= @document.pathToRoot %>/img/favicon.ico">
+  <link rel="apple-touch-icon" href="<%= @document.pathToRoot %>/img/apple-touch-icon.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="<%= @document.pathToRoot %>/img/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="<%= @document.pathToRoot %>/img/apple-touch-icon-114x114.png">
 
   <!-- Shims: IE6-8 support of HTML5 elements -->
   <!--[if lt IE 9]>
@@ -25,12 +25,12 @@
 
   <!-- Styles -->
   <!-- Note that our style.css must come after bootstrap and before bootstrap-responsive, or else the navbar gets messed up -->
-  <%- @getBlock('styles').add(["/vendor/bootstrap.css","/vendor/font-awesome.css","/vendor/bootstrap-responsive.css","/styles/style.css"]).toHTML() %>
+  <%- @getBlock('styles').add([@document.pathToRoot+"/vendor/bootstrap.css", @document.pathToRoot+"/vendor/font-awesome.css", @document.pathToRoot+"/vendor/bootstrap-responsive.css", @document.pathToRoot+"/styles/style.css"]).toHTML() %>
 
   <!-- Scripts -->
   <!-- These *should* be below the body, but I want to use jQuery in inline scripts. -->
-  <script src="/vendor/jquery.min.js"></script>
-  <%- @getBlock('scripts').add(["/vendor/bootstrap.js","/scripts/script.js"]).toHTML() %>
+  <script src="<%= @document.pathToRoot %>/vendor/jquery.min.js"></script>
+  <%- @getBlock('scripts').add([@document.pathToRoot+"/vendor/bootstrap.js",@document.pathToRoot+"/scripts/script.js"]).toHTML() %>
 
 </head>
 <body>
@@ -39,8 +39,8 @@
     <div class="navbar-inner">
       <div class="container">
 
-        <a class="brand" href="/">
-          <img class="brand-logo pull-left" src="/img/ciphershare-arrows.svg" />
+        <a class="brand" href="<%= @document.pathToRoot %>/">
+          <img class="brand-logo pull-left" src="<%= @document.pathToRoot %>/img/ciphershare-arrows.svg" />
           <%= @getPreparedBrand() %>
         </a>
 
@@ -48,7 +48,7 @@
           <% for document in @getCollection('documents').toJSON(): %>
             <% if document.meta.nav: %>
             <li typeof="sioc:Page" about="<%= document.url %>" class="<%= 'active'  if @document.url is document.url %>">
-              <a href="<%= document.url %>" property="dc:title"><%= document.title %></a>
+              <a href="<%= @document.pathToRoot %><%= document.url %>" property="dc:title"><%= document.title %></a>
             </li>
             <% end %>
           <% end %>
