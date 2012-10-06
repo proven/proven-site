@@ -30,7 +30,7 @@
     "docpad-plugin-partials": "2.x",
     "docpad-plugin-stylus": "2.x",
     "stylus": "latest",
-    "marked": "latest"
+    "marked": "latest",
     "coffee-script": "latest"
   },
   "devDependencies": {
